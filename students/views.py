@@ -1,15 +1,33 @@
-from django.http import HttpResponse
 from django.shortcuts import render
-def home(request):
-     if request.method == 'POST':
-       student={
-           'name':request.POST.get("student_name"),
-           'email':request.POST.get("email"),
-           'age':request.POST.get("age"),
-           'department':request.POST.get("department")
-       }
-       return render(request,'students/success.html',{'student':student})
-    
-     return render(request,'students/register.html')
+from .forms import StudentForm
 
-# Create your views here.
+
+def home(request):
+
+    if request.method == 'POST':
+
+        form = StudentForm(request.POST)
+
+        if form.is_valid():
+
+            student = {
+                'name': form.cleaned_data['student_name'],
+                'email': form.cleaned_data['email'],
+                'age': form.cleaned_data['age'],
+                'department': form.cleaned_data['department']
+            }
+
+            return render(
+                request,
+                'students/success.html',
+                {'student': student}
+            )
+
+    else:
+        form = StudentForm()
+
+    return render(
+        request,
+        'students/register.html',
+        {'form': form}
+    )
