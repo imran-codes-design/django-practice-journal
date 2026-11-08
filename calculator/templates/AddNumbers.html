@@ -1,0 +1,14 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="d-flex justify-content-center bg-primary">
+<div class="bg-white w-75 p-3 rounded vh-100"> 
+<h1 class="text-primary"> add Two Numbers </h1>
+<form action="../addNumsResult/" method="POST" >
+    {% csrf_token %}
+ <label for="">First Number</label>
+ <input type="text" name="num1" class= "form-control" /><br />
+ <label for="">Second Number</label>
+   <input type="text" name="num2" class= "form-control" /><br />
+ <input type="submit" value="Add Numbers" />
+</form> </div> </div>
+{% endblock %}

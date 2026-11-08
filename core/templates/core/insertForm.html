@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-center bg-primary">
+    <div class="bg-white w-75 p-3 rounded vh-100">
+        <h1 class="text-primary">Insert Record</h1>
+
+        <form action="{% url 'insertForm' %}" method="post">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+
+            <input type="submit" value="Add Product"
+                   class="btn btn-success mt-2">
+        </form>
+    </div>
+</div>
+{% endblock %}

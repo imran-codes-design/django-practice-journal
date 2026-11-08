@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    {% extends "base.html" %}
+</head>
+<body>
+    {% comment %} 
+    filter
+    variable 
+    tags
+    {% endcomment %}
+   {% block content %}
+   <h1>welcome student imran</h1>
+   <p>Student: {{ name|upper }}</p>
+    <p>Marks: {{ marks }}</p>
+    {% if marks >= 1000 %}
+     <p>pass</p>
+   {% endif %}
+   {% endblock content %}
+
+    
+    
+</body>
+</html>

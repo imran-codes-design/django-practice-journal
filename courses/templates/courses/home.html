@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Name:{{ name }}</h1>
+   <p>Course:{{ course }}</p>
+   <p>Duration:{{ duration }}</p>
+   <p>Instructor:{{instructor}}</p>
+   {% if course == "Django" %}
+   <h2>its imran course</h2>
+   {% else %}
+   <h3>its wrong</h3>
+   {% endif %}
+   <h1>All Courses</h1>
+   {% for mes in courses %}
+   <p>{{mes}}</p>
+   {% endfor %}
+</body>
+</html>

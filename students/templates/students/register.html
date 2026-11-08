@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <label>Student Name:</label>
+        <input type="text" name="student_name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" required>
+        <br><br>
+
+        <label>Department:</label>
+        <select name="department">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="IT">Information Technology</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Register Student</button>
+
+    </form>
+
+</body>
+</html>
