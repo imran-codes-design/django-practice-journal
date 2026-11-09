@@ -1,4 +1,4 @@
-﻿# Chapter 02 â€” Django Environment and Installation
+﻿# Chapter 02 Django Environment and Installation
 
 ## Overview
 
@@ -72,4 +72,4 @@ python manage.py runserver
 
 ## Next Chapter
 
-**Chapter 03 â€” Django Projects and Applications**
+**Chapter 03 Django Projects and Applications**
