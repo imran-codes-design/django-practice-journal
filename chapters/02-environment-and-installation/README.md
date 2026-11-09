@@ -24,7 +24,7 @@ By completing this chapter, you will understand how to:
 |---|---|---|
 | 01 | Python and Virtual Environments | Completed |
 | 02 | Installing Django | Completed |
-| 03 | Django Development Server | Pending |
+| 03 | Django Development Server | completed |
 
 ## Practical Commands
 
@@ -68,7 +68,7 @@ python manage.py runserver
 
 ## Chapter Progress
 
-**Chapter Status:** Documentation in Progress
+**Chapter Status:** Completed
 
 ## Next Chapter
 
