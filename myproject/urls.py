@@ -5,6 +5,7 @@ from django.contrib import admin  # 1. Import the admin module
 from django.urls import path 
 
 urlpatterns = [
+   path("formpractice/",include("formpractice.urls")),
    path("students/",include("students.urls")),
    path("courses/",include("courses.urls")),
     path("core/", include("core.urls")),

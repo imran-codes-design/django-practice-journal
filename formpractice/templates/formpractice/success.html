@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Successful</title>
+</head>
+<body>
+
+    <h1>Admission Application Submitted!</h1>
+
+    <h2>Student Details</h2>
+
+    <p><strong>Full Name:</strong> {{ admission.full_name }}</p>
+
+    <p><strong>Email:</strong> {{ admission.email }}</p>
+
+    <p><strong>Phone:</strong> {{ admission.phone }}</p>
+
+    <p><strong>Date of Birth:</strong> {{ admission.date_of_birth }}</p>
+
+    <p><strong>Qualification:</strong> {{ admission.qualification }}</p>
+
+    <p><strong>Marks:</strong> {{ admission.marks }}%</p>
+
+    <p><strong>Program:</strong> {{ admission.program }}</p>
+
+    <p><strong>Gender:</strong> {{ admission.gender }}</p>
+
+    <p><strong>Address:</strong> {{ admission.address }}</p>
+
+    <p><strong>Terms Accepted:</strong> {{ admission.agree_terms }}</p>
+
+    <a href="{% url 'admission_form' %}">Submit Another Application</a>
+
+</body>
+</html>

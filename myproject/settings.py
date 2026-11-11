@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'prac',
     'courses',
     'students',
+    'formpractice',
 ]
 
 MIDDLEWARE = [
